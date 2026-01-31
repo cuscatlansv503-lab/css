@@ -1,0 +1,149 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+    margin: 0; /* Añadido para evitar márgenes blancos extra */
+}
+
+a {
+    text-decoration: none;
+    color: #16a34a;
+}
+
+footer {
+    height: 2.5rem;
+    background-color: #1f2937;
+    color: white;
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.title-header {
+    color: #16a34a;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.prelogo {
+    transition: all 0.15s ease-in-out;
+    border: 2px solid rgba(22, 163, 74, 0.5);
+}
+
+.logodef {
+    display: block;
+    transform: translateY(0);
+}
+
+.logo2 {
+    width: 2rem;
+    height: 2rem;
+}
+
+.footer-title {
+    text-align: center;
+    font-size: 0.875rem;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    gap: 1rem; /* "espacio" se traduce como gap */
+    margin-top: 0.5rem;
+}
+
+.redes > li {
+    list-style-type: none;
+}
+
+.elemento-red {
+    color: inherit;
+    font-size: 0.875rem;
+    transition: color 0.15s ease-in-out;
+}
+
+.main-frame {
+    margin: 0.5rem auto;
+    height: auto;
+    width: 91.666667%;
+    max-width: 66.666667%;
+}
+
+#incrustarIframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+}
+
+#btnIframe {
+    background-color: #16a34a;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    transition: background-color 0.3s;
+    border: none;
+    box-shadow: none;
+}
+
+#btnIframe:hover {
+    background-color: #15803d;
+    cursor: pointer;
+}
+
+.subiframe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+    width: 100%;
+    margin: 20px auto;
+    margin-bottom: 1rem;
+    padding: 0.25rem;
+    background-color: #e5e7eb;
+}
+
+.premarco {
+    border-radius: 0.5rem;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.centrado {
+    width: 100%;
+    text-align: center;
+}
+
+.titulo {
+    color: #16a34a;
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+
+.margen-superior-2 {
+    margin-top: 2.5rem;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .main-frame {
+        max-width: 100%;
+    }
+    #incrustarIframe {
+        width: 100%;
+    }
+}
